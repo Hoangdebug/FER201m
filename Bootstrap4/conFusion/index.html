@@ -41,23 +41,26 @@
   </nav>
 
 
-    <header class="jumbotron">
-      <div class="container">
-        <div>
-          <div class="col-12 col-sm-6">
-            <h1>Ristorante con Fusion</h1>
-            <p>
-              We take inspiration from the World's best cuisines, and create a
-              unique fusion experience. Our lipsmacking creations will tickle
-              your culinary senses!
-            </p>
-          </div>
-          <div class="col-12 col-sm align-self-center">
-            <img src="img/logo.png" class="img-fluid">
+  <header class="jumbotron">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-sm-6">
+                <h1>Ristorante con Fusion</h1>
+                <p>
+                    We take inspiration from the World's best cuisines and create a
+                    unique fusion experience. Our lipsmacking creations will tickle
+                    your culinary senses!
+                </p>
+            </div>
+            <div class="col-12 col-sm align-self-center">
+                <img src="img/logo.png" class="img-fluid">
+                <a href="#reservationForm" class="btn btn-warning btn-sm">Reserve a Table</a>
+            </div>
+
         </div>
-        </div>
-      </div>
-    </header>
+    </div>
+</header>
+
 
 
     <div class="container">
@@ -80,18 +83,23 @@
 
       <div class="row row-content align-items-center">
         <div class="col-12 col-sm-4 col-md-3">
-          <h3>This Month's Promotions</h3>
+            <h3>This Month's Promotions</h3>
         </div>
         <div class="col col-sm col-md">
-          <h2>Weekend Grand Buffet <span class="badge badge-pill badge-secondary">$4.99</span></h2>
-          <p>
-            Featuring mouthwatering combinations with a choice of five different
-            salads, six enticing appetizers, six main entrees and five choicest
-            desserts. Free flowing bubbly and soft drinks. All for just $19.99
-            per person
-          </p>
+            <div class="media">
+                <div class="media-body">
+                    <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                    <p>
+                        Featuring mouthwatering combinations with a choice of five different
+                        salads, six enticing appetizers, six main entrees, and five choicest
+                        desserts. Free-flowing bubbly and soft drinks. All for just $19.99
+                        per person
+                    </p>
+                </div>
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="Buffet Image">
+            </div>
         </div>
-      </div>
+    </div>
 
       <div class="row row-content align-items-center">
         <div class="col-12 col-sm-4 order-sm-last col-md-3">
@@ -109,7 +117,61 @@
                   creating mouthwatering Indo-Italian fusion experiences.
                   </p>
           </div>
+        </div>
       </div>
+
+
+      <div class="row row-content align-items-center">
+        <div class="offset-col-12 col-sm-8 col-md-9">
+            <div class="card">
+                <h5 class="card-header bg-warning text-white font-weight-bold">Reserve a Table</h5>
+                <div class="card-body">
+                    <form id="reservationForm">
+                        <div class="form-group">
+                            <label for="numGuests">Number of Guests</label>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="numGuests" id="numGuests1" value="1">
+                                    <label class="form-check-label" for="numGuests1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="numGuests" id="numGuests2" value="2">
+                                    <label class="form-check-label" for="numGuests2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="numGuests" id="numGuests3" value="3">
+                                    <label class="form-check-label" for="numGuests3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="numGuests" id="numGuests4" value="4">
+                                    <label class="form-check-label" for="numGuests4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="numGuests" id="numGuests5" value="5">
+                                    <label class="form-check-label" for="numGuests5">5</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="numGuests" id="numGuests6" value="6">
+                                    <label class="form-check-label" for="numGuests6">6</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="reservationDateTime">Date and Time</label>
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <input type="text" class="form-control" id="reservationDate" placeholder="Date">
+                              </div>
+                              <div class="col-md-6">
+                                  <input type="text" class="form-control" id="reservationTime" placeholder="Time">
+                              </div>
+                          </div>
+                      </div>
+                        <button type="submit" class="btn btn-primary">Reserve</button>
+                    </form>
+                </div>
+            </div>
+        </div>
       </div>
     </div>
 
